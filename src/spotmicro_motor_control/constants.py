@@ -37,7 +37,7 @@ JOINT_CENTERS = {
             "rear_right_wrist": 0.17,
             "rear_left_knee": 1.13,
             "rear_right_knee": 1.13,
-            "rear_left_shoulder": 1.13,
+            "rear_left_shoulder": 1.2,
             "rear_right_shoulder": 1.13
         }
 
