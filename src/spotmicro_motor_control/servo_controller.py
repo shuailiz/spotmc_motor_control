@@ -45,7 +45,7 @@ class ServoController(object):
             raise("Please use a motor id between 0 and %d"%self.NUM_OF_SERVOS)
 
         self.validate_motor_target(angle_degree, motor_id)
-        rospy.loginfo("ID is %d and angle is %f", motor_id, angle_degree)
+        rospy.logdebug("ID is %d and angle is %f", motor_id, angle_degree)
         self.servo_kit.servo[motor_id].angle = angle_degree
         time.sleep(0.01)
 
