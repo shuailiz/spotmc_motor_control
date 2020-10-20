@@ -27,17 +27,17 @@ JOINT_MOTOR_MAP = {
         }
 
 JOINT_CENTERS = {
-            "front_left_wrist": 2.15,
+            "front_left_wrist": 2.2,
             "front_right_wrist": 0.17,
             "front_left_knee": 1.13,
             "front_right_knee": 1.18,
             "front_left_shoulder": 1.18,
             "front_right_shoulder": 1.13,
             "rear_left_wrist": 2.1,
-            "rear_right_wrist": 0.17,
-            "rear_left_knee": 1.13,
+            "rear_right_wrist": 0.1,
+            "rear_left_knee": 1.2,
             "rear_right_knee": 1.13,
-            "rear_left_shoulder": 1.2,
+            "rear_left_shoulder": 1.25,
             "rear_right_shoulder": 1.13
         }
 
