@@ -12,18 +12,18 @@ BODY_MOTOR_MAP = {
         }
 
 JOINT_MOTOR_MAP = {
-            "front_left_wrist": 1,
-            "front_right_wrist": 0,
-            "front_left_knee": 3,
-            "front_right_knee": 2,
             "front_left_shoulder": 5,
+            "front_right_knee": 2,
+            "front_left_wrist": 1,
             "front_right_shoulder": 4,
-            "rear_left_wrist": 10,
-            "rear_right_wrist": 11,
-            "rear_left_knee": 8,
-            "rear_right_knee": 9,
+            "front_left_knee": 3,
+            "front_right_wrist": 0,
             "rear_left_shoulder": 6,
-            "rear_right_shoulder": 7
+            "rear_left_knee": 8,
+            "rear_left_wrist": 10,
+            "rear_right_shoulder": 7,
+            "rear_right_knee": 9,
+            "rear_right_wrist": 11
         }
 
 JOINT_CENTERS = {
