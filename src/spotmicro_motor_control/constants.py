@@ -13,10 +13,10 @@ BODY_MOTOR_MAP = {
 
 JOINT_MOTOR_MAP = {
             "front_left_shoulder": 5,
-            "front_right_knee": 2,
+            "front_left_knee": 3,
             "front_left_wrist": 1,
             "front_right_shoulder": 4,
-            "front_left_knee": 3,
+            "front_right_knee": 2,
             "front_right_wrist": 0,
             "rear_left_shoulder": 6,
             "rear_left_knee": 8,
@@ -39,6 +39,21 @@ JOINT_CENTERS = {
             "rear_right_knee": 1.13,
             "rear_left_shoulder": 1.25,
             "rear_right_shoulder": 1.13
+        }
+
+JOINT_SOFT_LIMITS = {
+            "front_left_wrist": [-2.1, 0.1],
+            "front_right_wrist": [-0.1, 2.1],
+            "front_left_knee": [-1, 1],
+            "front_right_knee": [-1, 1],
+            "front_left_shoulder": [-1, 0.6],
+            "front_right_shoulder": [-0.6, 1],
+            "rear_left_wrist": [-2.1, 0.1],
+            "rear_right_wrist": [-0.1, 2.1],
+            "rear_left_knee": [-1, 1],
+            "rear_right_knee": [-1, 1],
+            "rear_left_shoulder": [-0.6, 1],
+            "rear_right_shoulder": [-1, 0.6]
         }
 
 JOINT_LIMITS = {
