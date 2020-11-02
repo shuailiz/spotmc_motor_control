@@ -17,14 +17,16 @@ class BodyState(object):
 
 class ServoController(object):
     NUM_OF_SERVOS = 12
-    MIN_PULSE_WIDTH = 771
-    MAX_PULSE_WIDTH = 2740
+    MIN_PULSE_WIDTH = 500
+    MAX_PULSE_WIDTH = 2500
 
     def __init__(self):
         self.servo_kit = ServoKit(channels=16)
         for i in range(self.NUM_OF_SERVOS):
             self.servo_kit.servo[i].set_pulse_width_range(self.MIN_PULSE_WIDTH,
                                                           self.MAX_PULSE_WIDTH)
+
+        self.current_servo_pos = np.zeros(self.NUM_OF_SERVOS)
 
     def validate_motor_target(self, target, motor_id, degree=True):
         if not degree:
@@ -46,7 +48,9 @@ class ServoController(object):
 
         self.validate_motor_target(angle_degree, motor_id)
         rospy.logdebug("ID is %d and angle is %f", motor_id, angle_degree)
-        self.servo_kit.servo[motor_id].angle = angle_degree
+        if int(angle_degree) != self.current_servo_pos[motor_id]:
+            self.servo_kit.servo[motor_id].angle = int(angle_degree)
+            self.current_servo_pos[motor_id] = int(angle_degree)
         time.sleep(0.01)
 
     def move_single_motor_radian(self, motor_id, angle_radian):
