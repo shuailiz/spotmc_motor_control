@@ -3,6 +3,8 @@ R_FRONT = [0, 2, 4]
 L_REAR = [10, 8, 6]
 R_REAR = [11, 9, 7]
 
+ORDERED_LEG_NAME_ARRAY=["FL", "FR", "RL", "RR"]
+
 BODY_MOTOR_MAP = {
             "all": L_FRONT + R_FRONT + L_REAR + R_REAR,
             "l_front": L_FRONT,
